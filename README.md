@@ -1,7 +1,7 @@
 # Proyecto IAS - Parte 2
 
-**Alumno** Vanina Resquin
-**Materia** Taller de Lenguaje de Programación I
+**Alumno:** Vanina Resquin
+**Materia:** Taller de Lenguaje de Programación I
 **Año:** 2026
 
 ## Descripción
