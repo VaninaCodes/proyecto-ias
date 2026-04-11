@@ -65,6 +65,11 @@ nav ul{
     list-style: none;
     display: flex;
     justify-content: space-around;
+    /* Flexbox para la lista de navegación
+   - display: flex activa el modo flexbox, alineando los ítems en fila horizontal
+   - justify-content: space-around distribuye los enlaces con espacio igual entre ellos
+    y en los extremos.
+*/
 }
 /*MAIN*/
 main{
@@ -97,6 +102,10 @@ img{
     height: auto;
     border-radius: 6px;
     margin-top: 20px;
+     /*IMAGEN CENTRADA*/
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 /*PIE DE PAGINA*/
 footer{
@@ -106,10 +115,15 @@ footer{
     width: auto;
     color: white;
     /*text-align: center;*/
+
     /*Centrado con flexbox*/
     display: flex;
     flex-direction: column;
     align-items: center;
+    /* Flexbox para el pie de página (footer)
+   - display: flex activa el modo flexbox en el footer
+   - flex-direction: column organiza los elementos en columna.
+   - align-items: center centra horizontalmente.*/
 }
 /*COLOR DEL ENLACE AL PASAR EL MOUSE*/
 a:hover{
@@ -121,6 +135,7 @@ div img{
     height: auto;
     border-radius: 6px;
     margin-top: 20px;
+
 }
 /*ESTILOS DE LOS INPUT DE EL FORM*/
 input[type="text"],
@@ -175,11 +190,33 @@ button{
     padding: 10px;
     margin-bottom: 10px;
     list-style-type:none;
+
     /*Lista de funciones en 3 columnas*/
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 20px;
     align-items: center;
+    /* Grid para la lista de funciones (.servicio)
+        - display: grid activa el modo grid, permitiendo organizar los ítems en una cuadrícula.
+        - grid-template-columns: 1fr 1fr divide el contenedor en 2 columnas de igual ancho.
+        - gap: 20px establece un espacio de 20px entre filas y columnas.
+        - align-items: center alinea verticalmente al centro el contenido de cada celda*/
+}
+/*CONTAINERS*/
+.container{
+    display: grid;
+    grid-template-rows: auto auto 1fr auto;
+    min-height: 100vh;
+    /* Grid para el contenedor principal (.container)
+   - display: grid activa el modo grid en el contenedor.
+   - grid-template-rows: auto auto 1fr auto define 4 filas:
+       · Primera fila (auto): el header ocupa solo el espacio que necesita.
+       · Segunda fila (auto): la barra de navegación ocupa solo el espacio que necesita.
+       · Tercera fila (1fr): el main crece para ocupar todo el espacio restante disponible,
+        empujando el footer hacia abajo.
+       · Cuarta fila (auto): el footer ocupa solo el espacio que necesita.
+   - min-height: 100vh asegura que el contenedor ocupe al menos toda la altura de la pantalla.
+*/
 }
 /*ID:*/
 /*id del enlace del mapa*/
@@ -200,15 +237,15 @@ button{
     border-radius: 6px;
     padding: 20px;
     width:max-content;
+
     /*Formulario con flexbox*/
     display: flex;
     flex-wrap: wrap;
     gap: 15px;
+    /* Flexbox para el formulario (#formulario)
+        - display: flex activa el modo flexbox.
+        - flex-wrap: wrap permite que los elementos pasen a la siguiente línea automáticamente
+        cuando no hay suficiente espacio horizontal.
+        - gap: 15px establece un espacio de 15px entre cada campo del formulario*/
 
-}
-/*CONTAINERS*/
-.container{
-    display: grid;
-    grid-template-rows: auto auto 1fr auto;
-    min-height: 100vh;
 }
