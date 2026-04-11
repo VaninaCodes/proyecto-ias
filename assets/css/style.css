@@ -105,7 +105,11 @@ footer{
     margin-top: 30px;
     width: auto;
     color: white;
-    text-align: center;
+    /*text-align: center;*/
+    /*Centrado con flexbox*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 /*COLOR DEL ENLACE AL PASAR EL MOUSE*/
 a:hover{
