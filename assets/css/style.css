@@ -52,13 +52,19 @@ nav{
     background-color:green;
     padding: 10px 20px;
     width: auto;
-    text-align: center;
+    /*text-align: center;*/
 }
 /*ENLACES DENTRO DE NAV*/
 nav a{
     color: white;
     font-weight: bold;
     padding: 8px 14px;
+}
+/*LISTA DE LA BARRA NAV*/
+nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
 }
 /*MAIN*/
 main{
