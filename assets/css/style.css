@@ -168,3 +168,9 @@ input[type="textarea"]  {
     padding: 20px;
     width:max-content;
 }
+/*CONTAINERS*/
+.container{
+    display: grid;
+    grid-template-rows: auto auto 1fr auto;
+    min-height: 100vh;
+}
